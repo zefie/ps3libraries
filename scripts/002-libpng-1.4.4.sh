@@ -1,11 +1,11 @@
 #!/bin/sh -e
 # libpng-1.4.4.sh by Dan Peori (danpeori@oopo.net)
-
+VERSION=1.4.19
 ## Download the source code.
-wget --continue http://download.sourceforge.net/libpng/libpng-1.4.4.tar.gz
+wget https://downloads.sourceforge.net/project/libpng/libpng14/${VERSION}/libpng-${VERSION}.tar.gz
 
 ## Unpack the source code.
-rm -Rf libpng-1.4.4 && tar xfvz libpng-1.4.4.tar.gz && cd libpng-1.4.4
+rm -Rf libpng-${VERSION} && tar xfvz libpng-${VERSION}.tar.gz && cd libpng-${VERSION}
 
 ## Create the build directory.
 mkdir build-ppu && cd build-ppu
