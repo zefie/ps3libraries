@@ -1,15 +1,15 @@
 #!/bin/sh -e
 # libcurl-7.31.0 by KaKaRoTo
 # modified by mhaqs for 7.31.0 release and cpp compatibility
-
+VERSION=7.53.1
 ## Download the source code.
-wget --continue http://curl.haxx.se/download/curl-7.31.0.tar.gz
+wget --continue http://curl.haxx.se/download/curl-${VERSION}.tar.gz
 
 ## Unpack the source code.
-rm -Rf curl-7.31.0 && tar xfvz curl-7.31.0.tar.gz && cd curl-7.31.0
+rm -Rf curl-${VERSION} && tar xfvz curl-${VERSION}.tar.gz && cd curl-${VERSION}
 
 ## Patch the source code.
-cat ../../patches/libcurl-7.31.0.patch | patch -p1
+cat ../../patches/libcurl-7.54.1.patch | patch -p1
 
 ## Create the build directory.
 mkdir build-ppu && cd build-ppu
