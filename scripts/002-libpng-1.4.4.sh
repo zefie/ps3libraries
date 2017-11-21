@@ -1,6 +1,6 @@
 #!/bin/sh -e
 # libpng-1.4.4.sh by Dan Peori (danpeori@oopo.net)
-VERSION=1.4.19
+VERSION=1.4.22
 ## Download the source code.
 wget https://downloads.sourceforge.net/project/libpng/libpng14/${VERSION}/libpng-${VERSION}.tar.gz
 
