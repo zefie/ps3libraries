@@ -1,0 +1,12 @@
+diff -Naur a/include/openssl/e_os2.h b/include/openssl/e_os2.h
+--- a/include/openssl/e_os2.h	2018-09-11 07:08:22.654442214 +0200
++++ b/include/openssl/e_os2.h	2018-09-11 07:19:05.751085285 +0200
+@@ -225,6 +225,8 @@
+ #  endif
+ # endif
+ 
++#define OSSL_SSIZE_MAX LONG_MAX
++
+ # ifdef DEBUG_UNUSED
+ #  define __owur __attribute__((__warn_unused_result__))
+ # else
