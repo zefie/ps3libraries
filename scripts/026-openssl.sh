@@ -43,7 +43,7 @@ VERSION="${VERSION}${REV}"
 wget --continue --no-check-certificate -O openssl-${VERSION}.tar.gz https://www.openssl.org/source/openssl-${VERSION}.tar.gz
 wgetchk=$?
 
-if [ $? -ne 0 ]; then
+if [ ${wgetchk} -ne 0 ]; then
 	# probably archived
 	wget --continue --no-check-certificate -O openssl-${VERSION}.tar.gz https://www.openssl.org/source/$VERSION/openssl-${VERSION}.tar.gz
 fi
