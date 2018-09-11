@@ -1,11 +1,13 @@
 #!/bin/sh -e
-# freetype-2.4.3.sh by Dan Peori (danpeori@oopo.net)
+# freetype.sh by Dan Peori (danpeori@oopo.net) / zefie
+
+VERSION="2.4.11"
 
 ## Download the source code.
-wget --continue http://download.savannah.gnu.org/releases/freetype/freetype-2.4.3.tar.gz
+wget --continue http://download.savannah.gnu.org/releases/freetype/freetype-${VERSION}.tar.gz
 
 ## Unpack the source code.
-rm -Rf freetype-2.4.3 && tar xfvz freetype-2.4.3.tar.gz && cd freetype-2.4.3
+rm -Rf freetype-${VERSION} && tar xfvz freetype-${VERSION}.tar.gz && cd freetype-${VERSION}
 
 ## Create the build directory.
 mkdir build-ppu && cd build-ppu
