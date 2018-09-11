@@ -1,11 +1,13 @@
 #!/bin/sh -e
-# libogg-1.2.1.sh by Dan Peori (danpeori@oopo.net)
+# libogg.sh by Dan Peori (danpeori@oopo.net) / zefie
+
+VERSION="1.3.3"
 
 ## Download the source code.
-wget --continue http://downloads.xiph.org/releases/ogg/libogg-1.2.1.tar.gz
+wget --continue http://downloads.xiph.org/releases/ogg/libogg-${VERSION}.tar.gz
 
 ## Unpack the source code.
-rm -Rf libogg-1.2.1 && tar xfvz libogg-1.2.1.tar.gz && cd libogg-1.2.1
+rm -Rf libogg-${VERSION} && tar xfvz libogg-${VERSION}.tar.gz && cd libogg-${VERSION}
 
 ## Create the build directory.
 mkdir build-ppu && cd build-ppu
