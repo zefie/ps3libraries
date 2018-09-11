@@ -1,6 +1,6 @@
 #!/bin/sh -e
 # libexpat https://github.com/libexpat/libexpat
-VERSION=R_2_2_4
+VERSION=R_2_2_6
 
 wget --continue https://github.com/libexpat/libexpat/archive/${VERSION}.tar.gz
 
