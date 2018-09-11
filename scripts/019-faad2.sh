@@ -1,11 +1,13 @@
 #!/bin/sh -e
-# faad2-2.7.sh by dhewg (dhewg@wiibrew.org)
+# faad2.sh by dhewg (dhewg@wiibrew.org) / zefie
+
+VERSION="2.8.8"
 
 ## Download the source code.
-wget --continue http://downloads.sourceforge.net/faac/faad2-2.7.tar.gz
+wget --continue http://downloads.sourceforge.net/faac/faad2-${VERSION}.tar.gz
 
 ## Unpack the source code.
-rm -Rf faad2-2.7 && tar xfvz faad2-2.7.tar.gz && cd faad2-2.7
+rm -Rf faad2-${VERSION} && tar xfvz faad2-${VERSION}.tar.gz && cd faad2-${VERSION}
 
 ## Create the build directory.
 mkdir build-ppu && cd build-ppu
