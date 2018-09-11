@@ -1,11 +1,13 @@
 #!/bin/sh -e
-# libvorbis-1.3.2.sh by Dan Peori (danpeori@oopo.net)
+# libvorbis.sh by Dan Peori (danpeori@oopo.net) / zefie
+
+VERSION="1.3.6"
 
 ## Download the source code.
-wget --continue http://downloads.xiph.org/releases/vorbis/libvorbis-1.3.2.tar.gz
+wget --continue http://downloads.xiph.org/releases/vorbis/libvorbis-${VERSION}.tar.gz
 
 ## Unpack the source code.
-rm -Rf libvorbis-1.3.2 && tar xfvz libvorbis-1.3.2.tar.gz && cd libvorbis-1.3.2
+rm -Rf libvorbis-${VERSION} && tar xfvz libvorbis-${VERSION}.tar.gz && cd libvorbis-${VERSION}
 
 ## Create the build directory.
 mkdir build-ppu && cd build-ppu
